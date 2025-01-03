@@ -24,13 +24,13 @@ class Student implements Role {
     return sum / count;
   }
 
-  // Override the displayRole method
+
   @override
   void displayRole() {
     print('Role: Student');
   }
 
-  // Method to display Student information
+
   void displayInfo() {
     displayRole();
     print('Name: $name');
@@ -40,7 +40,7 @@ class Student implements Role {
   }
 }
 
-// Class representing a Teacher
+
 class Teacher implements Role {
   final String name;
   final int age;
@@ -56,7 +56,7 @@ class Teacher implements Role {
     required this.coursesTaught,
   });
 
-  // Override the displayRole method
+
   @override
   void displayRole() {
     print('Role: Teacher');
