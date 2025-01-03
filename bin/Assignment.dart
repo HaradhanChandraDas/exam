@@ -62,7 +62,7 @@ class Teacher implements Role {
     print('Role: Teacher');
   }
 
-  // Method to display Teacher information
+
   void displayInfo() {
     displayRole();
     print('Name: $name');
@@ -78,7 +78,7 @@ class Teacher implements Role {
 
 void main() {
   // Create a Student instance
-  Student student = Student(
+  Student Stinfo = Student(
     name: 'John Doe',
     age: 20,
     address: '123 Main St',
@@ -87,7 +87,7 @@ void main() {
   );
 
 
-  Teacher teacher = Teacher(
+  Teacher Tecinfo = Teacher(
     name: 'Mrs. Smith',
     age: 35,
     address: '456 Oak St',
@@ -97,10 +97,10 @@ void main() {
 
 
   print('Student Information:\n');
-  student.displayInfo();
+  Stinfo.displayInfo();
   print('\n\n');
 
 
   print('Teacher Information:\n');
-  teacher.displayInfo();
+  Tecinfo.displayInfo();
 }
